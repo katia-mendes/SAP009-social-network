@@ -81,7 +81,7 @@ input{
 }
 
 input::placeholder {
-  color:#7798a7;;
+  color:#7798a7;
 }
 
 textarea:focus, input:focus {
@@ -118,7 +118,7 @@ textarea:focus, input:focus {
 } 
 
 .btn-logo-google {
-  background-color: #7798a700;;
+  background-color: #7798a700;
 }
 
 
