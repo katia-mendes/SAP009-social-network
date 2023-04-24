@@ -1,4 +1,4 @@
-import { salvarPost, pegarPost, deletarPost, editarPost } from '../../firebase/firestore.js';
+import { salvarPost, pegarPost, deletarPost } from '../../firebase/firestore.js';
 
 import { auth } from '../../firebase/firebase.js';
 
@@ -116,5 +116,3 @@ export default () => {
   });
   return container;
 };
-
-const botaoEditar = containerPost.querySelector('#editar');
