@@ -83,7 +83,6 @@ export default () => {
           };
         });
       }
-     
     });
 
     arrayPosts.forEach(post => {
@@ -95,7 +94,6 @@ export default () => {
           editarPosts(post.id, textPostado.value)
           textPostado.setAttribute('disabled', true)
           btnEditar.removeAttribute('hidden')
-          
 
         })
 
