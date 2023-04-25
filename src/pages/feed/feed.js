@@ -1,4 +1,8 @@
-import { salvarPost, pegarPost, deletarPost } from '../../firebase/firestore.js';
+import {
+  salvarPost,
+  pegarPost,
+  deletarPost,
+} from '../../firebase/firestore.js';
 
 import { auth } from '../../firebase/firebase.js';
 
