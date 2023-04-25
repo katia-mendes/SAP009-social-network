@@ -10,11 +10,13 @@ import {
   updateDoc,
 } from 'firebase/firestore';
 
-import { app, auth } from './firebase.js';
+import { app} from './firebase.js';
+import { getAuth } from 'firebase/auth';
 
 const db = getFirestore(app);
 
-export const salvarPost = async (date, id, text, username) =>
+export const salvarPost = async (date, id, text, username) => {
+  const auth = getAuth();
   addDoc(collection(db, 'posts'), {
     userId: auth.currentUser.uid,
     date,
@@ -23,6 +25,7 @@ export const salvarPost = async (date, id, text, username) =>
     text,
     username,
   });
+}
 
 export const pegarPost = async () => {
   const mensage = [];

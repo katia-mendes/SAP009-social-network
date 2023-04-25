@@ -27,7 +27,7 @@ export const fazerLogin = (email, senha) => {
   return signInWithEmailAndPassword(auth, email, senha);
 };
 
-export const fazerCadastro = (email, senha, name) => 
+export const fazerCadastro = (email, senha, name) =>
 createUserWithEmailAndPassword(auth, email, senha)
     .then(() =>
       updateProfile(auth.currentUser, {
