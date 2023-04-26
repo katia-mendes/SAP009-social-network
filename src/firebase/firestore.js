@@ -47,3 +47,7 @@ export const editarPosts = async (postId, text) => {
     text,
   });
 };
+
+export const deletarPost = async (postId) => {
+  deleteDoc(doc(db, 'posts', postId));
+};

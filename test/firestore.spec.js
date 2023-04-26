@@ -7,7 +7,6 @@ import {
   query,
   orderBy,
   getDocs,
-  snapShot,
 } from 'firebase/firestore';
 
 import { getAuth } from 'firebase/auth';
