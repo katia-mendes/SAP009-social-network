@@ -55,11 +55,7 @@ export default () => {
                     <button id="${posts.id}deletar" class="btn-postar delete">
                       <img class='excluir-img' src='./img/botao-apagar.png' alt='deletar'>
                       </button>` : ''}
-                    <button id="${posts.id}like" class="btn-postar like">
-                     <img class='curtir-img' src='./img/ame.png' alt='logo-google'>
-                     <label id="likes-quantities">${posts.like}</label>
-                     </button>
-                     </div>
+                      </div>
                      </div>
                   </li>
                   </ul>
@@ -70,7 +66,7 @@ export default () => {
     container.querySelector('.feed-postado').innerHTML = postList;
 
     arrayPosts.forEach(post => {
-      if ( post.userId === auth.currentUser.uid ) {
+      if (post.userId === auth.currentUser.uid) {
         const btnDeletar = document.getElementById(post.id + 'deletar');
         btnDeletar.addEventListener('click', (e) => {
           e.preventDefault();
@@ -102,12 +98,12 @@ export default () => {
           if (window.confirm('Tem certeza de que deseja editar a publicação?')) {
             btnEditar.setAttribute('hidden', true)
             textPostado.removeAttribute('disabled')
-            
+
             //editarPosts(post.id)
-              //.then(() => {
-                //const areaPostado = document.getElementById(post.id);
-                //areaPostado.remove();
-              //});
+            //.then(() => {
+            //const areaPostado = document.getElementById(post.id);
+            //areaPostado.remove();
+            //});
           }
         });
       }
