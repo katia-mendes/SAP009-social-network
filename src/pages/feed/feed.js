@@ -1,4 +1,9 @@
-import { salvarPost, pegarPost, deletarPost, editarPosts } from '../../firebase/firestore.js';
+import {
+  salvarPost,
+  pegarPost,
+  deletarPost,
+  editarPosts,
+} from '../../firebase/firestore.js';
 
 import { auth } from '../../firebase/firebase.js';
 
@@ -70,7 +75,7 @@ export default () => {
     container.querySelector('.feed-postado').innerHTML = postList;
 
     arrayPosts.forEach(post => {
-      if ( post.userId === auth.currentUser.uid ) {
+      if (post.userId === auth.currentUser.uid) {
         const btnDeletar = document.getElementById(post.id + 'deletar');
         btnDeletar.addEventListener('click', (e) => {
           e.preventDefault();
@@ -80,7 +85,7 @@ export default () => {
                 const areaPostado = document.getElementById(post.id);
                 areaPostado.remove();
               });
-          };
+          }
         });
       }
     });
@@ -91,17 +96,16 @@ export default () => {
         const textPostado = document.getElementById('txt-area-postado' + post.id);
         const btnSalvar = document.getElementById(post.id + 'salvar');
         btnSalvar.addEventListener('click', (e) => {
-          editarPosts(post.id, textPostado.value)
-          textPostado.setAttribute('disabled', true)
-          btnEditar.removeAttribute('hidden')
-
-        })
+          editarPosts(post.id, textPostado.value);
+          textPostado.setAttribute('disabled', true);
+          btnEditar.removeAttribute('hidden');
+        });
 
         btnEditar.addEventListener('click', (e) => {
           e.preventDefault();
           if (window.confirm('Tem certeza de que deseja editar a publicação?')) {
-            btnEditar.setAttribute('hidden', true)
-            textPostado.removeAttribute('disabled')
+            btnEditar.setAttribute('hidden', true);
+            textPostado.removeAttribute('disabled');
             
             //editarPosts(post.id)
               //.then(() => {

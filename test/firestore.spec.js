@@ -3,9 +3,11 @@ import {
   deleteDoc,
   addDoc,
   collection,
+  updateDoc,
   query,
   orderBy,
   getDocs,
+  snapShot,
 } from 'firebase/firestore';
 
 import { getAuth } from 'firebase/auth';
@@ -14,6 +16,7 @@ import {
   salvarPost,
   pegarPost,
   deletarPost,
+  editarPosts,
 } from '../src/firebase/firestore';
 
 jest.mock('firebase/firestore');
@@ -34,22 +37,25 @@ describe('salvarPost', () => {
     collection.mockReturnValueOnce(mockCollection);
     const mockAuth = {
       currentUser: {
-        displayName: 'nomeTeste',
-        uid: 'idteste',
+        displayName: 'username',
+        uid: 'iduser',
       },
     };
     getAuth.mockReturnValueOnce(mockAuth);
 
-    const dataPostagem = new Date();
-    const textoPostagem = 'postTeste';
+    const dataPost = new Date();
+    const textArea = 'txt-area';
+    const userName = 'nome e sobrenome'
     const posts = {
-      username: mockAuth.currentUser.displayName,
-      userId: mockAuth.currentUser.uid,
-      date: dataPostagem,
-      text: textoPostagem,
+      userId: mockAuth.currentUser.displayName,
+      date: dataPost,
+      id: mockAuth.currentUser.uid,
+      like: [],
+      text: textArea,
+      username: userName,
     };
 
-    await salvarPost(dataPostagem, textoPostagem);
+    await salvarPost(dataPost);
 
     expect(addDoc).toHaveBeenCalledTimes(1);
     expect(addDoc).toHaveBeenCalledWith(mockCollection, posts);
@@ -58,43 +64,34 @@ describe('salvarPost', () => {
   });
 });
 
-/* describe('pegarPost', () => {
+describe('pegarPost', () => {
   it('should be a function', () => {
     expect(typeof pegarPost).toBe('function');
   });
+});
 
-  it('deve acessar a publicação criada e postar na tela', async () => {
-    const mockOrderBy = 'order';
-    orderBy.mockReturnValueOnce(mockOrderBy);
-    const mockQuery = 'query';
-    query.mockReturnValueOnce(mockQuery);
-    const mockCollection = 'collection';
-    collection.mockReturnValueOnce(mockCollection);
-    snapShot.mockResolvedValueOnce([
-      {
-        id: '1',
-        data: () => ({ post: 'Post um' }),
-      },
-      {
-        id: '2',
-        data: () => ({ post: 'Post dois' }),
-      },
-    ]);
-    const acessarPost = await pegarPost();
-    expect(acessarPost).toEqual([
-      { id: '1', post: 'Post um' },
-      { id: '2', post: 'Post dois' },
-    ]);
-    expect(orderBy).toHaveBeenCalledTimes(1);
-    expect(orderBy).toHaveBeenCalledWith('date');
-    expect(collection).toHaveBeenCalledTimes(1);
-    expect(collection).toHaveBeenCalledWith(undefined, 'posts');
-    expect(query).toHaveBeenCalledTimes(1);
-    expect(query).toHaveBeenCalledWith(mockCollection, mockOrderBy);
-    expect(snapShot).toHaveBeenCalledTimes(1);
-    expect(snapShot).toHaveBeenCalledWith(mockQuery);
+describe('editarPosts', () => {
+  it('should be a function', () => {
+    expect(typeof editarPosts).toBe('function');
   });
-}); */
+
+  it('deve editar e atualizar a publicação', async () => {
+    updateDoc.mockResolvedValue();
+    const mockDoc = 'doc';
+    doc.mockReturnValueOnce(mockDoc);
+    const editarTxt = 'editar';
+    const salvarTxt = 'salvar';
+    const atualizarPost = {
+      text: salvarTxt,
+    };
+    await editarPosts(editarTxt, salvarTxt);
+
+    expect(doc).toHaveBeenCalledTimes(1);
+    expect(doc).toHaveBeenCalledWith(undefined, 'posts', editarTxt);
+    expect(updateDoc).toHaveBeenCalledTimes(1);
+    expect(updateDoc).toHaveBeenCalledWith(mockDoc, atualizarPost);
+  });
+});
 
 describe('deletarPost', () => {
   it('should be a function', () => {
