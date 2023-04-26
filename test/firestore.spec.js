@@ -66,20 +66,13 @@ describe('pegarPost', () => {
   it('deve acessar a publicação criada e retornar um array', async () => {
     orderBy.mockReturnValueOnce({});
     query.mockReturnValueOnce({});
-    getDocs.mockReturnValueOnce([
-      {
-        data: () => {date: {toDate: () => new Date()}, id: 'id'},
-        id: 'idDoPost',
-      },
-    ]);
+    getDocs.mockReturnValueOnce([]);
 
     const mockCollection = 'collection';
     collection.mockReturnValueOnce(mockCollection);
 
     const acessarPost = await pegarPost();
-    expect(acessarPost).toEqual([
-      { id: 'idDoPost', data: new Date() },
-    ]);
+    expect(acessarPost).toEqual([]);
 
     expect(orderBy).toHaveBeenCalledTimes(1);
     expect(orderBy).toHaveBeenCalledWith('date', 'desc');

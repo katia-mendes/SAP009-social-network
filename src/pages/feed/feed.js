@@ -15,7 +15,7 @@ export default () => {
   </header>
   <main>
     <div class="postando">
-        <textarea name="" id="txt-area" cols="69" rows="4" placeholder= "Escreva seu post"> Digite aqui seu post
+        <textarea name="" id="txt-area" cols="69" rows="4" placeholder= "Escreva seu post">
         </textarea>
       <button class="btn-postar" id="bntPublicar">
           <img class='postar-img' src='./img/checked.png' alt='logo-google'>
