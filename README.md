@@ -91,7 +91,6 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
 #### Protótipo de alta fidelidade
 
 
-a fidelidade]()
 
 ## 3. Interface da página 💻
 
