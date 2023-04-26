@@ -25,7 +25,7 @@ beforeEach(() => {
   jest.clearAllMocks();
 });
 
-/* describe('salvarPost', () => {
+describe('salvarPost', () => {
   it('should be a function', () => {
     expect(typeof salvarPost).toBe('function');
   });
@@ -62,9 +62,9 @@ beforeEach(() => {
     expect(collection).toHaveBeenCalledTimes(1);
     expect(collection).toHaveBeenCalledWith(undefined, 'posts');
   });
-}); */
+});
 
-describe('pegarPost', () => {
+/* describe('pegarPost', () => {
   it('should be a function', () => {
     expect(typeof pegarPost).toBe('function');
   });
@@ -103,7 +103,7 @@ describe('pegarPost', () => {
     expect(snapShot).toHaveBeenCalledTimes(1);
     expect(snapShot).toHaveBeenCalledWith({});
   });
-}); 
+}); */
 
 /* describe('editarPosts', () => {
   it('should be a function', () => {
