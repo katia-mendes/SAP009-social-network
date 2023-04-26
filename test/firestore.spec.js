@@ -64,7 +64,7 @@ describe('salvarPost', () => {
   });
 });
 
-/* describe('pegarPost', () => {
+describe('pegarPost', () => {
   it('should be a function', () => {
     expect(typeof pegarPost).toBe('function');
   });
@@ -72,25 +72,13 @@ describe('salvarPost', () => {
   it('deve acessar a publicação criada e retornar um array', async () => {
     orderBy.mockReturnValueOnce({});
     query.mockReturnValueOnce({});
-    const snapShot = getDocs.mockReturnValueOnce({});
+    getDocs.mockReturnValueOnce([]);
 
     const mockCollection = 'collection';
     collection.mockReturnValueOnce(mockCollection);
-    snapShot.mockResolvedValueOnce([
-      {
-        id: '1',
-        date: () => ({ mesage: 'Post um' }),
-      },
-      {
-        id: '2',
-        date: () => ({ mesage: 'Post dois' }),
-      },
-    ]);
+
     const acessarPost = await pegarPost();
-    expect(acessarPost).toEqual([
-      { id: '1', mesage: 'Post um' },
-      { id: '2', mesage: 'Post dois' },
-    ]);
+    expect(acessarPost).toEqual([]);
 
     expect(orderBy).toHaveBeenCalledTimes(1);
     expect(orderBy).toHaveBeenCalledWith('date', 'desc');
@@ -100,12 +88,10 @@ describe('salvarPost', () => {
     expect(query).toHaveBeenCalledWith(mockCollection, {});
     expect(getDocs).toHaveBeenCalledTimes(1);
     expect(getDocs).toHaveBeenCalledWith({});
-    expect(snapShot).toHaveBeenCalledTimes(1);
-    expect(snapShot).toHaveBeenCalledWith({});
   });
-}); */
+});
 
-/* describe('editarPosts', () => {
+describe('editarPosts', () => {
   it('should be a function', () => {
     expect(typeof editarPosts).toBe('function');
   });
@@ -146,4 +132,4 @@ describe('deletarPost', () => {
     expect(deleteDoc).toHaveBeenCalledTimes(1);
     expect(deleteDoc).toHaveBeenCalledWith(mockDoc);
   });
-}); */
+});

@@ -32,7 +32,7 @@ O Projeto teve como principal objetivo construir uma Single Page Application res
 
 O Projeto foi construído e implementado a partir dos seguintes critérios:
 
-### Definição do produto
+### A) Definição do produto
 
 **Nome:** HelParents
 
@@ -40,7 +40,7 @@ O Projeto foi construído e implementado a partir dos seguintes critérios:
 
 **Principais usuários:** Pais, cuidadores e/ou responsáveis por crianças e adolescentes e profissionais que atuam com esse público nas diversas instâncias - Saúde, Educação, Assistência Social, entre outros.
 
-### Histórias de usuário
+### B) Histórias de usuário
 
 Para a produção da página, construímos três `Histórias de Usuário`, conforme dispostas a seguir:
 
@@ -77,7 +77,8 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
   #### Definições de pronto:
   * Aparecer as postagens de outros usuários na tela;
   * Ação de curtir/descurtir.
-### Desenho de interface do usuário
+
+### C) Desenho de interface do usuário
 
 #### Protótipo de baixa fidelidade
 
@@ -94,7 +95,7 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
 * Mobile 
 
 
-* Telas à partir de 600px (Tablets/Desktop)
+* Telas a partir de 600px (Tablets/Desktop)
 
 ## Desenvolvido por:
 
