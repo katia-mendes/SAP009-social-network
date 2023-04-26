@@ -83,13 +83,15 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
 
 #### Protótipo de baixa fidelidade
 
-![1° e 2° telas - Baixa](https://claseslaboratoria.slack.com/files/U04HJ6B0ADR/F0507A78V5H/imagem_do_whatsapp_de_2023-03-24____s__16.06.24.jpg)
+![Telas baixa fidelidade](https://user-images.githubusercontent.com/109312804/234682891-a0b488b7-7b5d-4a52-8e3b-df05e7f0c59c.jpg)
 
-![3° tela - Baixa](https://files.slack.com/files-pri/T0NNB6T0R-F0500RRSE5C/imagem_do_whatsapp_de_2023-03-24____s__16.06.24.jpg)
+![Imagem do WhatsApp de 2023-03-24 à(s) 16 06 24 (2)](https://user-images.githubusercontent.com/109312804/234684070-da203316-a4d1-49da-a14f-da18789f3c84.jpg)
+
 
 #### Protótipo de alta fidelidade
 
-![Alta fidelidade]()
+
+a fidelidade]()
 
 ## 3. Interface da página 💻
 
