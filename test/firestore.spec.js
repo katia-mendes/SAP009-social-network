@@ -3,9 +3,11 @@ import {
   deleteDoc,
   addDoc,
   collection,
+  updateDoc,
   query,
   orderBy,
   getDocs,
+  updateDoc,
 } from 'firebase/firestore';
 
 import { getAuth } from 'firebase/auth';
@@ -14,7 +16,10 @@ import {
   salvarPost,
   pegarPost,
   deletarPost,
+  editarPosts,
 } from '../src/firebase/firestore';
+import { describe } from 'yargs';
+import { expect } from '@jest/globals';
 
 jest.mock('firebase/firestore');
 jest.mock('firebase/auth');
@@ -34,22 +39,26 @@ describe('salvarPost', () => {
     collection.mockReturnValueOnce(mockCollection);
     const mockAuth = {
       currentUser: {
-        displayName: 'nomeTeste',
-        uid: 'idteste',
+        displayName: 'username',
+        uid: 'iduser',
       },
     };
     getAuth.mockReturnValueOnce(mockAuth);
 
-    const dataPostagem = new Date();
-    const textoPostagem = 'postTeste';
+    const dataPost = new Date();
+    const textArea = 'txt-area';
+    const userName = 'nome e sobrenome';
+    const id = 'id';
     const posts = {
-      username: mockAuth.currentUser.displayName,
       userId: mockAuth.currentUser.uid,
-      date: dataPostagem,
-      text: textoPostagem,
+      date: dataPost,
+      id,
+      like: [],
+      text: textArea,
+      username: userName,
     };
 
-    await salvarPost(dataPostagem, textoPostagem);
+    await salvarPost(dataPost, id, textArea, userName);
 
     expect(addDoc).toHaveBeenCalledTimes(1);
     expect(addDoc).toHaveBeenCalledWith(mockCollection, posts);
@@ -82,6 +91,29 @@ describe('pegarPost', () => {
     expect(query).toHaveBeenCalledWith(mockCollection, {});
     expect(getDocs).toHaveBeenCalledTimes(1);
     expect(getDocs).toHaveBeenCalledWith({});
+  });
+});
+
+describe('editarPosts', () => {
+  it('should be a function', () => {
+    expect(typeof editarPosts).toBe('function');
+  });
+
+  it('deve editar e atualizar a publicação', async () => {
+    updateDoc.mockResolvedValue();
+    const mockDoc = 'doc';
+    doc.mockReturnValueOnce(mockDoc);
+    const editarTxt = 'editar';
+    const salvarTxt = 'salvar';
+    const atualizarPost = {
+      text: salvarTxt,
+    };
+    await editarPosts(editarTxt, salvarTxt);
+
+    expect(doc).toHaveBeenCalledTimes(1);
+    expect(doc).toHaveBeenCalledWith(undefined, 'posts', editarTxt);
+    expect(updateDoc).toHaveBeenCalledTimes(1);
+    expect(updateDoc).toHaveBeenCalledWith(mockDoc, atualizarPost);
   });
 });
 

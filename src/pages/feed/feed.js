@@ -1,4 +1,9 @@
-import { salvarPost, pegarPost, deletarPost, editarPosts } from '../../firebase/firestore.js';
+import {
+  salvarPost,
+  pegarPost,
+  deletarPost,
+  editarPosts,
+} from '../../firebase/firestore.js';
 
 import { auth } from '../../firebase/firebase.js';
 
@@ -55,11 +60,7 @@ export default () => {
                     <button id="${posts.id}deletar" class="btn-postar delete">
                       <img class='excluir-img' src='./img/botao-apagar.png' alt='deletar'>
                       </button>` : ''}
-                    <button id="${posts.id}like" class="btn-postar like">
-                     <img class='curtir-img' src='./img/ame.png' alt='logo-google'>
-                     <label id="likes-quantities">${posts.like}</label>
-                     </button>
-                     </div>
+                      </div>
                      </div>
                   </li>
                   </ul>
@@ -70,7 +71,7 @@ export default () => {
     container.querySelector('.feed-postado').innerHTML = postList;
 
     arrayPosts.forEach(post => {
-      if ( post.userId === auth.currentUser.uid ) {
+      if (post.userId === auth.currentUser.uid) {
         const btnDeletar = document.getElementById(post.id + 'deletar');
         btnDeletar.addEventListener('click', (e) => {
           e.preventDefault();
@@ -80,7 +81,7 @@ export default () => {
                 const areaPostado = document.getElementById(post.id);
                 areaPostado.remove();
               });
-          };
+          }
         });
       }
     });
@@ -91,11 +92,10 @@ export default () => {
         const textPostado = document.getElementById('txt-area-postado' + post.id);
         const btnSalvar = document.getElementById(post.id + 'salvar');
         btnSalvar.addEventListener('click', (e) => {
-          editarPosts(post.id, textPostado.value)
-          textPostado.setAttribute('disabled', true)
-          btnEditar.removeAttribute('hidden')
-
-        })
+          editarPosts(post.id, textPostado.value);
+          textPostado.setAttribute('disabled', true);
+          btnEditar.removeAttribute('hidden');
+        });
 
         btnEditar.addEventListener('click', (e) => {
           e.preventDefault();
@@ -104,10 +104,10 @@ export default () => {
             textPostado.removeAttribute('disabled')
             
             //editarPosts(post.id)
-              //.then(() => {
-                //const areaPostado = document.getElementById(post.id);
-                //areaPostado.remove();
-              //});
+            //.then(() => {
+            //const areaPostado = document.getElementById(post.id);
+            //areaPostado.remove();
+            //});
           }
         });
       }
