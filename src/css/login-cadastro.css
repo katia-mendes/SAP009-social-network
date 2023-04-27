@@ -164,4 +164,34 @@ hr{
     align-items: center;
     margin: 0;
   }
+
+  .img-logo {
+    max-height: 70vh;
+    max-width: 40vw;
+    
+  }
+
+  .box-register{
+    height: 55vh;
+  }
+  
+  article {
+    max-width: 15em;
+    margin-bottom: 20%;
+  }
+
+  input{
+    margin-bottom: 7%;
+    margin-top: 3%;
+    width: 30vw;
+    height: 1.5rem;
+    padding-left: 0.7rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+
+  .btn-cadastro, .btn-login, .btn-logo-google {
+    font-size: 0.7em; 
+  } 
+
 }

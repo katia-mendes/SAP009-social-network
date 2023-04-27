@@ -83,14 +83,18 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
 
 #### Protótipo de baixa fidelidade
 
-![Telas baixa fidelidade](https://user-images.githubusercontent.com/109312804/234682891-a0b488b7-7b5d-4a52-8e3b-df05e7f0c59c.jpg)
+![Telas baixa fidelidade](https://![Captura de tela 2023-04-27 142610](https://user-images.githubusercontent.com/122563827/234944847-9a833e38-80a6-4610-bbc0-5500911baa95.png)
+)
 
-![Imagem do WhatsApp de 2023-03-24 à(s) 16 06 24 (2)](https://user-images.githubusercontent.com/109312804/234684070-da203316-a4d1-49da-a14f-da18789f3c84.jpg)
+![Baixa fidelidade mobile](https://![![Captura de tela 2023-04-27 142701](https://user-images.githubusercontent.com/122563827/234946747-3486b0a4-4405-4a79-8be1-d1205a439bf2.png)
+)
+)
 
 
 #### Protótipo de alta fidelidade
 
-
+![Alta fidelidade} (![Captura de tela 2023-04-27 151937](https://user-images.githubusercontent.com/122563827/234957187-b5b7f0e6-1839-47fa-bf05-67c95c979c85.png)
+)
 
 ## 3. Interface da página 💻
 

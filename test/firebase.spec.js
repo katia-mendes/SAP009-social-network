@@ -66,6 +66,6 @@ describe('fazerCadastro', () => {
     fazerCadastro(email, senha);
 
     expect(createUserWithEmailAndPassword).toHaveBeenCalledTimes(1);
-    expect(createUserWithEmailAndPassword).toHaveBeenCalledWith(undefined, email, senha);
+    expect(createUserWithEmailAndPassword).toHaveBeenCalledWith(mockAuth, email, senha);
   });
 });
