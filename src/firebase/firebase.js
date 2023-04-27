@@ -23,17 +23,13 @@ export const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
 
-export const fazerLogin = (email, senha) => {
-  return signInWithEmailAndPassword(auth, email, senha);
-};
+export const fazerLogin = (email, senha) => signInWithEmailAndPassword(auth, email, senha);
 
-export const fazerCadastro = (email, senha, name) =>
-createUserWithEmailAndPassword(auth, email, senha)
-    .then(() =>
-      updateProfile(auth.currentUser, {
-        displayName: name,
-      }))
-    .catch((error) => console.log(error));
+export const fazerCadastro = (email, senha, name) => {
+  const authentication = getAuth(app);
+  return createUserWithEmailAndPassword(authentication, email, senha)
+    .then(() => updateProfile(authentication.currentUser, { displayName: name }));
+};
 
 export const fazerLoginComGoogle = () => {
   const provider = new GoogleAuthProvider();
