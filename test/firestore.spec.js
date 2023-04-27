@@ -7,7 +7,6 @@ import {
   query,
   orderBy,
   getDocs,
-  updateDoc,
 } from 'firebase/firestore';
 
 import { getAuth } from 'firebase/auth';
@@ -18,8 +17,6 @@ import {
   deletarPost,
   editarPosts,
 } from '../src/firebase/firestore';
-import { describe } from 'yargs';
-import { expect } from '@jest/globals';
 
 jest.mock('firebase/firestore');
 jest.mock('firebase/auth');
