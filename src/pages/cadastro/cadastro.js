@@ -1,4 +1,6 @@
 import { fazerCadastro } from '../../firebase/firebase';
+import logocad from '../../img/novalogosemfundo.png';
+import cadastroimg from '../../img/op26.png';
 
 export default () => {
   const registerContainer = document.createElement('div');
@@ -6,7 +8,7 @@ export default () => {
   const template = `
     <section class='box-text-img'>
       <div class='box-01'>
-        <img src='./img/novalogosemfundo.png' alt='logo HelParents' class='img-logo'>
+        <img src=${logocad} alt='logo HelParents' class='img-logo'>
        <div class="paragrafo">
         <article>
         <p><strong>Primeira vez por aqui?</strong></p>
@@ -15,7 +17,7 @@ export default () => {
         </div>
         </article>
       <div class='img-register'>
-        <img src='./img/op26.png' alt='img-cadastro' class='img-cadastro'>
+        <img src=${cadastroimg} alt='img-cadastro' class='img-cadastro'>
       </div>
     </div>
     <section class='box-register'>

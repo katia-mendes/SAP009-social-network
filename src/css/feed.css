@@ -9,8 +9,8 @@
 }
 
 main {
-  justify-content: center;
-  text-align: center;
+  justify-content:space-around;
+  align-items: center;
 }
 
 
@@ -95,8 +95,8 @@ textarea::placeholder {
 .dataPost {
   color: white;
   padding-top: 1%;
-  margin-right: 40%;
   text-shadow: .2rem .3rem .2rem rgba(0, 0, 0, 0.664);
+  margin-right: 40%;
 }
 
 #txt-area {

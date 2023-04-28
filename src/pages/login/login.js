@@ -1,11 +1,15 @@
 import { fazerLogin, fazerLoginComGoogle } from '../../firebase/firebase';
 
+import logo from '../../img/novalogosemfundo.png';
+import cadastro from '../../img/op26.png';
+import googlelogo from '../../img/googlelogo.png';
+
 export default () => {
   const container = document.createElement('div');
   const template = `
     <section class='box-text-img'>
       <div class='box-01'>
-        <img src='./img/novalogosemfundo.png' alt='logo HelParents' class='img-logo'>
+        <img src=${logo} alt='logo HelParents' class='img-logo'>
         <div class="paragrafo">
           <article>
             <p>A <strong>HELParents</strong> é uma rede social para compartilhar informações e orientações ajudando pais e cuidadores sobre o uso da internet.</p>
@@ -13,7 +17,7 @@ export default () => {
           </article>  
         </div> 
         <div class='img-register'>
-          <img src='./img/op26.png' alt='img-cadastro' class='img-cadastro'>
+          <img src=${cadastro} alt='img-cadastro' class='img-cadastro'>
         </div>
       </div>
       <section class='box-register'>
@@ -28,7 +32,7 @@ export default () => {
             <button type="submit" class="btn-login" id="btn-login">LOGIN</button>
             <p class='text-box-register'>Acesse com o Google<p>
             <button type="button" class='btn-logo-google'>
-              <img class='google-img' src='./img/googlelogo.png' alt='logo-google'>
+              <img class='google-img' src=${googlelogo} alt='logo-google'>
             </button>
             <hr>
             <p class='text-box-register'>Ainda não tem conta?<p>
@@ -37,7 +41,7 @@ export default () => {
         </form> 
       </section>
     </section>  
-    `;
+ } `;
 
   container.innerHTML = template;
 
