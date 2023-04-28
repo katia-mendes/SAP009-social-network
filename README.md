@@ -99,7 +99,7 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
   </div>
   <div align="center">
     <img alt="tela feed" width="550" src=""/></br>
-    Tela 2: Tela do feed.
+    Tela 3: Tela do feed.
   </div>
 </div>
 
