@@ -85,16 +85,16 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
 
 ![Telas baixa fidelidade](https://![Captura de tela 2023-04-27 142610](https://user-images.githubusercontent.com/122563827/234944847-9a833e38-80a6-4610-bbc0-5500911baa95.png)
 )
-
-![Baixa fidelidade mobile](https://![![Captura de tela 2023-04-27 142701](https://user-images.githubusercontent.com/122563827/234946747-3486b0a4-4405-4a79-8be1-d1205a439bf2.png)
-)
-)
+![Baixa fidelidade] (![Captura de tela 2023-04-27 234019](https://user-images.githubusercontent.com/122563827/235042404-7006c08b-81d8-471d-b008-57ee34ae6ef3.png)
+ ![Baixa fidelidade] (![![Captura de tela 2023-04-27 233944](https://user-images.githubusercontent.com/122563827/235042797-3f4e4bb6-5662-4b04-931c-180759fbd10a.png)
 
 
 #### Protótipo de alta fidelidade
 
 ![Alta fidelidade} (![Captura de tela 2023-04-27 151937](https://user-images.githubusercontent.com/122563827/234957187-b5b7f0e6-1839-47fa-bf05-67c95c979c85.png)
-)
+
+![Alta fidelidade}  (![![Captura de tela 2023-04-27 234318](https://user-images.githubusercontent.com/122563827/235041967-ec16faaa-2a10-4aa0-8d3d-9231db2afe3d.png)
+
 
 ## 3. Interface da página 💻
 
