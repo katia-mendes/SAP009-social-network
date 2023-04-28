@@ -1,5 +1,4 @@
 # Social Network - HelParents
-Clique aqui e acesse o nosso site[https://social-network-69ad3.web.app/]
 <div align="center">
   
  <br>
@@ -11,7 +10,7 @@ Clique aqui e acesse o nosso site[https://social-network-69ad3.web.app/]
   
   <br>
   
-   Acesse ao projeto [aqui]() 
+   Acesse ao projeto [aqui](https://social-network-69ad3.web.app/)
  </div> 
 
 ## Índice
