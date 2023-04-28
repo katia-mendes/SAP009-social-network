@@ -93,10 +93,12 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
     <img alt="tela inicial de login" width="800" src="https://user-images.githubusercontent.com/109312804/235155826-53f64014-574b-4a1c-b059-dd721a2f4ba6.png"/></br>
     Tela 1: Tela inicial de login para desktop.
   </div>
+  </br>
   <div align="center">
     <img alt="tela cadastro" width="800" src="https://user-images.githubusercontent.com/109312804/235157326-693855a7-a5a9-462e-b6eb-e8894aabcca3.png"/></br>
     Tela 2: Tela de cadastro.
   </div>
+  </br>
   <div align="center">
     <img alt="tela feed" width="550" src=""/></br>
     Tela 3: Tela do feed.
