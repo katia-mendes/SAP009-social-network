@@ -48,7 +48,7 @@ export default () => {
         <ul>
         <li>
                   <div class='li'> 
-                  <div class"position-username-data">
+                  <div class="position-username-data">
                   <div class="position-user-name">
                   <img class="img-user-name" src=${user} alt="user-name">
                   <p class="user-name">${posts.username}</p>
