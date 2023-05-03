@@ -1,7 +1,4 @@
 # Social Network - HelParents
-
-***
-
 <div align="center">
   
  <br>
@@ -13,7 +10,7 @@
   
   <br>
   
-   Acesse ao projeto [aqui]() 
+   Acesse ao projeto [aqui](https://social-network-69ad3.web.app/)
  </div> 
 
 ## Índice
@@ -29,6 +26,8 @@ A HelParents é uma Rede social para compartilhar informações e orientações 
 
 O Projeto teve como principal objetivo construir uma Single Page Application responsiva, com mais de uma tela/página, permitindo a qualquer usuário criar uma conta de acesso, logar-se com ela (via cadastro ou google autentificação), criar, editar, deletar e dar _likes_ em publicações.
 
+*** 
+
 ## 2. Estrutura do Projeto ⚙
 
 O Projeto foi construído e implementado a partir dos seguintes critérios:
@@ -40,6 +39,8 @@ O Projeto foi construído e implementado a partir dos seguintes critérios:
 **Objetivo:** Rede social com o objetivo de ser um espaço para compartilhamento de informações e orientações direcionada a cuidadores e/ou responsáveis por crianças e adolescente acerca do uso da internet e seus aplicativos.
 
 **Principais usuários:** Pais, cuidadores e/ou responsáveis por crianças e adolescentes e profissionais que atuam com esse público nas diversas instâncias - Saúde, Educação, Assistência Social, entre outros.
+
+##
 
 ### B) Histórias de usuário
 
@@ -78,37 +79,63 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
   #### Definições de pronto:
   * Aparecer as postagens de outros usuários na tela;
   * Ação de curtir/descurtir.
+  
+  ##
 
 ### C) Desenho de interface do usuário
 
-#### Protótipo de baixa fidelidade
+<div align="center">
+  <h3>Protótipo Versão Desktop</h3>
+</div>
 
-![Telas baixa fidelidade](https://![Captura de tela 2023-04-27 142610](https://user-images.githubusercontent.com/122563827/234944847-9a833e38-80a6-4610-bbc0-5500911baa95.png)
-)
+<div style="display:flex">
+  <div align="center">
+    <img alt="tela inicial de login" width="800" src="https://user-images.githubusercontent.com/109312804/235155826-53f64014-574b-4a1c-b059-dd721a2f4ba6.png"/></br>
+    Tela 1: Tela inicial de login para desktop.
+  </div>
+  
+  <div align="center">
+    <img alt="tela cadastro" width="800" src="https://user-images.githubusercontent.com/109312804/235157326-693855a7-a5a9-462e-b6eb-e8894aabcca3.png"/></br>
+    Tela 2: Tela de cadastro.
+  </div>
+  <div align="center">
+    <img alt="tela feed" width="550" src=""/></br>
+    Tela 3: Tela do feed.
+  </div>
+</div>
 
-![Baixa fidelidade mobile](https://![![Captura de tela 2023-04-27 142701](https://user-images.githubusercontent.com/122563827/234946747-3486b0a4-4405-4a79-8be1-d1205a439bf2.png)
-)
-)
+##
+
+<div align="center">
+ <h3>Protótipo Versão Mobile</h3>
+</div>
 
 
-#### Protótipo de alta fidelidade
-
-![Alta fidelidade} (![Captura de tela 2023-04-27 151937](https://user-images.githubusercontent.com/122563827/234957187-b5b7f0e6-1839-47fa-bf05-67c95c979c85.png)
-)
+***
 
 ## 3. Interface da página 💻
 
-* Mobile 
+<div align="center">
+  <h3>Mobile</h3>
+</div>
 
 
-* Telas a partir de 600px (Tablets/Desktop)
+##
 
-## Desenvolvido por:
+<div align="center">
+  <h3>Desktop</3>
+</div>
+  
+<div style="display:flex">
+  <div align="center">
+    <img alt="tela inicial de login" width="800" src="https://user-images.githubusercontent.com/109312804/235155458-184c7887-95b8-487a-bb16-717e2fd0d73c.png"/></br>
+  </div>
+</div>
+
+***
+
+## 👩🏻‍💻 Desenvolvido por:
 
 Edimara Arcanjo | [Linkedin](https://www.linkedin.com/in/edimaraarcanjo/) <br>
 Erika Oliveira | [Linkedin](https://www.linkedin.com/in/erikaoli/) <br>
 Kátia Mendes | [Linkedim](https://www.linkedin.com/in/katiamendesr/)
-
-
-
-
