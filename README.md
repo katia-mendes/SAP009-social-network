@@ -99,20 +99,9 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
     Tela 2: Tela de cadastro.
   </div>
 
-##
-
-<div align="center">
- <h3>Protótipo Versão Mobile</h3>
-</div>
-
-
 ***
 
-## 3. Interface da página 💻
-
-<div align="center">
-  <h3>Mobile</h3>
-</div>
+## 3. Interface da página 
 
 
 ##
