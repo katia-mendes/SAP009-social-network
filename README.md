@@ -98,11 +98,6 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
     <img alt="tela cadastro" width="800" src="https://user-images.githubusercontent.com/109312804/235157326-693855a7-a5a9-462e-b6eb-e8894aabcca3.png"/></br>
     Tela 2: Tela de cadastro.
   </div>
-  <div align="center">
-    <img alt="tela feed" width="550" src=""/></br>
-    Tela 3: Tela do feed.
-  </div>
-</div>
 
 ##
 
