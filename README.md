@@ -82,11 +82,8 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
   
   ##
 
-### C) Desenho de interface do usuário
+## 3. Interface da página 
 
-<div align="center">
-  <h3>Protótipo Versão Desktop</h3>
-</div>
 
 <div style="display:flex">
   <div align="center">
@@ -101,25 +98,10 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
 
 ***
 
-## 3. Interface da página 
 
-
-##
-
-<div align="center">
-  <h3>Desktop</3>
-</div>
-  
-<div style="display:flex">
-  <div align="center">
-    <img alt="tela inicial de login" width="800" src="https://user-images.githubusercontent.com/109312804/235155458-184c7887-95b8-487a-bb16-717e2fd0d73c.png"/></br>
-  </div>
-</div>
-
-***
 
 ## 👩🏻‍💻 Desenvolvido por:
 
 Edimara Arcanjo | [Linkedin](https://www.linkedin.com/in/edimaraarcanjo/) <br>
 Erika Oliveira | [Linkedin](https://www.linkedin.com/in/erikaoli/) <br>
-Kátia Mendes | [Linkedim](https://www.linkedin.com/in/katiamendesr/)
+Katia Mendes | [Linkedim](https://www.linkedin.com/in/katiamendesr/)
